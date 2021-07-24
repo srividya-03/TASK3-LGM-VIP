@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<title>SACRED HEART UNIVERSITY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+    }
+
+   html{
+     border: 30px solid black;
+   }
+
+  
+ /* Button for slide*/
+    .button {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button1:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.button2 {
+  background-color:yellowgreen;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button2:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+.button3 {
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button4{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button4:hover {
+  background-color: #555555;
+  color: white;
+} 
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .packages {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 985px) {
+.toggle{
+    display: none;
+}
+}
+@media screen and (max-width: 950px) {
+    .navigation{
+       display: none;
+    }
+    .toggle{
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+
+<div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button">SACRED HEART UNIVERSITY</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#student" class="w3-bar-item w3-button">STUDENT LOGIN</a>
+        <a href="login.php" class="w3-bar-item w3-button">FACULTY LOGIN</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+    <a href="#student" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STUDENT LOGIN</a>
+    <a href="login.php" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FACULTY LOGIN</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px">
+
+       <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/home.jpg" class="w3-round w3-image w3-opacity-min" alt="university" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center"><b>ABOUT</b></h1><br>
+      <h5 class="w3-center">Since 1999</h5>
+      <p class="w3-large"> Sacred Heart University (SHU) is a private, Catholic university in Fairfield, Connecticut. Sacred Heart was founded in 1963 by the Most Reverend Walter W. Curtis, Bishop of the Diocese of Bridgeport, Connecticut. Sacred Heart was the first Catholic university in the United States to be staffed by the laity.
+
+        Sacred Heart is the second-largest Catholic university in New England, behind Boston College,and offers more than 80 degree programs to over 8,500 students at the bachelor's, master's and doctoral levels.
+        
+        Undergraduate students can study at Sacred Heart's international campuses in Dingle, Ireland and Luxembourg, including freshmen participating in pre-fall and Freshman Fall Abroad programs.</p>
+          </div>
+  </div>
+
+
+ 
+
+                    <!-- Campus Tour -->
+                 <div class="w3-content w3-container w3-padding-64" id="video">
+                    <h1 class="w3-center"><b>CAMPUS TOUR</b></h1><br> <br>
+                    <div class="w3-row-padding w3-center">
+
+              <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/DZdKUbfkE_c">
+                </iframe>
+               </div>
+
+              <div class="w3-col m6 w3-padding-large w3-hide-small">
+                  <iframe width="420" height="345" src="https://www.youtube.com/embed/MQSkLFlLByc">
+                  </iframe>
+                 </div>
+             </div>
+                </div>
+                </div>
+                    
+
+  <!-- Contact Section-->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h1 class="w3-center"> <b>CONTACT</b> </h1>
+        <p class="w3-center"></p>
+
+        <div class="w3-row w3-padding w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="images/map1.jpg" width="240px" height="300px">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 5151 Park Ave, Fairfield, CT 06825, United States <br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>      Phone: +91-8296170232<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>   Email: sacredheartuniversity@gmail.com<br>
+                </div>
+                <p> <h4>Drop your enquires below : </h4></p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                      </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"><br>
+                    <input class="w3-input w3-border" type="text" placeholder="Comment" required name="Comment"> 
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+     <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+   <p>Designed by <b style='color:MediumSeaGreen;'>Srividya</b>
+  </footer>
+
+    <script>      
+         // Modal Image Gallery
+         function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+       </script>
+        
+        </body>
+        </html>
+        
+
+
