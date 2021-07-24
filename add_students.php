@@ -86,10 +86,6 @@
             </fieldset>
         </form>
     </div>
-
-    <div class="footer">
-        <!-- <span>&copy Designed & Coded By Jibin Thomas</span> -->
-    </div>
 </body>
 </html>
 
